@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        }
+        body{
+            background-color: #fff;
+        }
+        .d-flex{
+            display: flex;
+            box-sizing: border-box;
+        }
+        .center{
+            justify-content: center;
+            align-items: center;
+        }
+        .a-none{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .a-link:hover{
+            border-bottom: 2px solid rgb(74, 91, 187);
+        }
+        .g-img{
+            width: 100px;
+            height: 350px;
+            object-fit: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 3.3s ease-in-out, opacity 3.3s ease-in-out;
+            border-radius: 15px;
+
+        }
+        .g-img:hover{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- top bar -->
+    <div class="d-flex" style="padding: 10px; width: 100%; justify-content: space-between; align-items: center; height: 40px;">
+        <!-- left section -->
+        <div class="d-flex" style="color: gray">
+            <div class="d-flex">
+                <h4>Hello World, My name is Ben John</h4>
+            </div>
+        </div>
+
+        <!-- right section -->
+        <div class="d-flex">
+            <input  placeholder="Search" type="search" style="background-color: rgb(247, 238, 238); border-top-right-radius: 5px; border-top-left-radius: 5px; border: 0; outline: 0; border-bottom: 3px solid gray; height: 30px; width: 400px; padding-left: 10px;">
+        </div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="d-flex center" style="margin-top: 40px;" >
+        <img src="logo.png" alt="logo" style="height: 150px;">
+    </div>
+
+    <!-- navigation -->
+    <div class="d-flex center" style="width: 100%; height: 50px;">
+        <div class="d-flex" style="justify-content: space-between; width: 300px;">
+            <a href="index.html" class="a-none">
+                <div class="d-flex a-link" style="padding: 10px;">
+                    Home
+                </div>
+            </a>
+            <a href="about.html" class="a-none">
+                <div class="d-flex a-link" style="padding: 10px;">
+                    About
+                </div>
+            </a>
+            <a href="#" class="a-none">
+                <div class="d-flex a-link" style="padding: 10px;">
+                    Projects
+                </div>
+            </a>
+            <a href="gallery.html" class="a-none">
+                <div class="d-flex a-link" style="padding: 10px;">
+                    Gallery
+                </div>
+            </a>
+        </div>
+    </div>  
+    
+    <!-- Gallery Start Here! -->
+    <div class="d-flex" style="flex-direction: column; align-items: center; margin-top: 20px;">
+
+        <!-- MY ADVENTURE -->
+        <div class="d-flex" style="height: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background-color: #fff;">
+            <div class="d-flex center" style="justify-content: space-around; background-color: #fff; width: 300px; padding-left: 20px; padding-right: 10px; flex-direction: column;">
+                <h1>My Adventure</h1>
+                <p>In the pursuit of happiness and the search for meaning, we often find ourselves navigating a labyrinth of challenges and opportunities, where the path ahead is uncertain and the outcome unclear.</p>
+            </div>
+
+            <div class="d-flex" style="width: 600px; justify-content: space-around; align-items: center;">
+                <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/87631757_1037461363281418_4320835046505185280_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHAOfzt7kjZDMgTGmgLFMCOEsyjaEodz10SzKNoSh3PXePNGJw4Izpqz2SdoTa4Kort8hVfmyNxx42X3kxPH4co&_nc_ohc=vSYkKZJNkzwAX92CIkR&_nc_ht=scontent-sin6-2.xx&oh=00_AfCKJU5k602207eQhFbUwqGC7DEfY4C3l_I1Q5LE20cMFw&oe=6481439B" alt="img1" class="g-img">
+                <img src="https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/89394509_1049992798694941_1141870880171753472_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeGGD11SWVeX4ojwV82l-wyB9h3_42yGPjz2Hf_jbIY-PKWvr4DTo3C6FjnP73om2ppyFuHgMgoIkstvlGzhhUZ0&_nc_ohc=MCfn40ocOoAAX9l2eny&_nc_ht=scontent-sin6-4.xx&oh=00_AfCihyAdDpmstu5ipxWkxVbyPPPM7Z3JbknqWLAmtFkwOw&oe=64812A32" alt="img1" class="g-img">
+                <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/81119757_998516057175949_1278187687538327552_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeEKzD-gIVbqKIo3qBM-dc7UV3OkEjMUiVtXc6QSMxSJW_iiRAmzYhNYZkR3LQAJjGrIAgSbdBA4rDFpWQVzLMTj&_nc_ohc=BUIrgC8o_GoAX-s9DpG&_nc_ht=scontent-sin6-2.xx&oh=00_AfDph9IgL5VZNs1ftuAYe3udMgWNUn-LOaT-w6JIKieDpQ&oe=64812B37" alt="img1" class="g-img">
+                <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/51156699_760574664303424_2388853422691450880_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFVVaBV3H2yTBKLQ9UuMnjdswGjDhIBvrOzAaMOEgG-s7uVkfRm_IiYEkNfTWSenu-JXiJ22PxD99ocAaiVBY5B&_nc_ohc=ceK3dD1w5jwAX-ZE7eW&_nc_oc=AQkLyNJI7N3rypazHCnEVD9mRlU86piPZPBOkpZnKJyt-6mAgVFgjqhoF4yWYBLVGFE&_nc_ht=scontent-sin6-2.xx&oh=00_AfCf1NuHwlMFUEHOqYZ6PVCHXwfRn0OZfqfnTsV9xgsNBQ&oe=64813A54" alt="img1" class="g-img">
+                <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t31.18172-8/27798065_542585382769021_1309144815162666709_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeG86g0FsOChasCsujH9cBk-vyXQ2DUWmqy_JdDYNRaarNIwo2APrpdxcMfyZy4eF4aRrSsZE0ZtEFRcnRsYoHjo&_nc_ohc=Q88tWr_cEtgAX-bixk-&_nc_ht=scontent-sin6-2.xx&oh=00_AfBPSs9M-FZ4QTfLjx7LnbyvUnap5DqnqD2jHEml4EwThw&oe=648131F4" alt="img1" class="g-img">
+            </div>
+        </div>
+
+        <!-- MY FAMILY -->
+        <div class="d-flex" style="margin-top: 50px; height: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background-color: #fff; flex-direction: row-reverse;">
+            <div class="d-flex center" style="justify-content: space-around; background-color: #fff; width: 300px; padding-left: 20px; padding-right: 10px; flex-direction: column;">
+                <h1>My Family</h1>
+                <p>Family is the foundation of our lives, providing love, support, and a sense of belonging. It shapes who we are and influences our values and beliefs. Family can be a source of joy and comfort, but also of conflict and pain. Despite its challenges, the bonds of family endure and can provide a sense of continuity and connection across generations. Whether through blood or chosen relationships, family is a vital part of our human experience.</p>
+            </div>
+
+            <div class="d-flex" style="width: 600px; justify-content: space-around; align-items: center;">
+                <img src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/322382234_742787327278116_2155511870737624399_n.jpg?stp=cp6_dst-jpg_s417x417&_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGI2V5k2Bsq1DbIR-w7wS2wTDK6SNXhS9BMMrpI1eFL0NUwzQfmvvKSU1mgDiGTJoXHvMMvT1Wd0u3M0Og3nvKv&_nc_ohc=NdibOSsArrQAX9Vx8cU&_nc_oc=AQmxNkhGEgsqGZpmoP5xGttPRG8eemyUV0RQKqg4bYOE3OnT0LmtOYNvzjvaJfrFtPs&_nc_ht=scontent.fceb6-1.fna&oh=00_AfAHcJVWPpig2fWDpjofGrvL_fJkylYM1_ZdJxtw6PWiEg&oe=645DD4A0" alt="img1" class="g-img">
+                <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/313422039_1754227641604783_7307939186276309859_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeF8pERkms2U-GGpqoX7hy7IUk43hDoRgnpSTjeEOhGCekCC7dp3Hg1y0nAbNri77uJU2N830k3RogdwQjmjhpb-&_nc_ohc=PEG9lBAFF_EAX-miuK8&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfDyrVdAOMha7sip2zUIokseupCj_LhjjkWdkcFG5vCtpA&oe=645F6EE8" alt="img1" class="g-img">
+                <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/313402861_1754218931605654_3274340767016006914_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeH3s0rfGn3tMRjdza8X397uvenoYWBDaxW96ehhYENrFbZF-U1SOajaQZnkDLrD0rQdfeuk-IbDHvDzqiUsTabI&_nc_ohc=PNHorePXvPIAX9w6Z77&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfBbsVpNKPLX4pxBJj2CywhZM7x26fXoP5sU0JbutIdD0w&oe=645EC5CE" alt="img1" class="g-img">
+                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/317860881_1783095598717987_4062064424596614355_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeFdLjFx9EeVh6EAYu-wMcq3wyAnnpDqGqjDICeekOoaqM-e3aFUrDAtQsmuGyhHZiCTrQCpD4FJnN7ste6C8n-I&_nc_ohc=EYkp9jQpL5IAX-MzAZd&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfDANQ0FoTseK8fkMtVNPcHB5U2wXsg8MXGpDeyBCVKmkg&oe=645E5B0E" alt="img1" class="g-img">
+                <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/316816735_1783095838717963_6241957280872377939_n.jpg?stp=dst-jpg_s552x414&_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeE9iAxy-1pw55ZcJwsHQazDMR9TEWGaKRYxH1MRYZopFhhZK46U4l2kNjo9XyMLuQqmzCrD8hQrefstrRsCoPNW&_nc_ohc=DRRa_uCF-ogAX-Rc4xX&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfAO8xcYmIKUD6HVPS4XXcQ1IpFd2QDqu4r9RXvE-9gdKw&oe=645F1173" alt="img1" class="g-img">
+            </div>
+        </div>
+        
+        <!-- RANDOM PICS -->
+        <div class="d-flex" style="margin-top: 50px;"></div>
+    <div class="d-flex"></div>
+    </div>
+    
+</body>
+</html>
