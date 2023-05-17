@@ -1,0 +1,48 @@
+/* how to use */
+
+/*
+<div class="k-gallery-container">
+    <div className="k-gallery-item" style={{"background-image": 'url("https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/345909915_1480723752755088_3627768455620716171_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xI_bM_cIN98AX-IR4NO&_nc_ht=scontent.fceb6-1.fna&oh=00_AfD0bAEobdrdDXw_oVTpcXq0qACbc6Be3dvwBPVOuOxsvQ&oe=6469DCE5")'}}></div>
+    <div className="k-gallery-item" style={{"background-image": 'url("https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/345909915_1480723752755088_3627768455620716171_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xI_bM_cIN98AX-IR4NO&_nc_ht=scontent.fceb6-1.fna&oh=00_AfD0bAEobdrdDXw_oVTpcXq0qACbc6Be3dvwBPVOuOxsvQ&oe=6469DCE5")'}}></div>
+    <div className="k-gallery-item" style={{"background-image": 'url("https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/345909915_1480723752755088_3627768455620716171_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xI_bM_cIN98AX-IR4NO&_nc_ht=scontent.fceb6-1.fna&oh=00_AfD0bAEobdrdDXw_oVTpcXq0qACbc6Be3dvwBPVOuOxsvQ&oe=6469DCE5")'}}></div>
+    <div className="k-gallery-item" style={{"background-image": 'url("https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/345909915_1480723752755088_3627768455620716171_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xI_bM_cIN98AX-IR4NO&_nc_ht=scontent.fceb6-1.fna&oh=00_AfD0bAEobdrdDXw_oVTpcXq0qACbc6Be3dvwBPVOuOxsvQ&oe=6469DCE5")'}}></div>
+    <div className="k-gallery-item" style={{"background-image": 'url("https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/345909915_1480723752755088_3627768455620716171_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xI_bM_cIN98AX-IR4NO&_nc_ht=scontent.fceb6-1.fna&oh=00_AfD0bAEobdrdDXw_oVTpcXq0qACbc6Be3dvwBPVOuOxsvQ&oe=6469DCE5")'}}></div>
+</div>    
+
+*/
+
+.k-gallery-container {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    width: 600px;
+}
+.k-gallery-item {
+    flex: 1;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25 , .4 , .45, 1.4);
+}
+
+.k-gallery-item:hover {
+    flex: 5;
+    animation: k-effects 0.1s linear forwards;
+}
+
+@keyframes k-effects {
+    0% {
+        flex-direction: column;
+    }
+    100% {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
