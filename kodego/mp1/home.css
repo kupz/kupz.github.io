@@ -66,10 +66,10 @@ body {
 }
 .action-container {
   display: flex;
-  font-size: 40px;
+  font-size: 30px;
   padding: 5px;
   justify-content: space-between;
-  width: 150px;
+  width: 110px;
 }
 /* end of post section */
 .mid-container {
