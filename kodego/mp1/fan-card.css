@@ -6,15 +6,16 @@ body {
   height: 100vh;
 }
 .card-container {
-  width: 250px;
-  height: 320px;
+  width: 150px;
+  height: 220px;
   background-color: transparent;
   border-radius: 10px;
   transform: translateY(-20%);
+  margin-right: 120px;
 }
 .big-card {
-  width: 250px;
-  height: 320px;
+  width: 150px;
+  height: 220px;
   background-color: black;
   background-size: cover;
   border-radius: 10px;

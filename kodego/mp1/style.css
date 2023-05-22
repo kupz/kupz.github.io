@@ -102,3 +102,11 @@
   justify-content: center;
   margin: 40px;
 }
+@media screen and (max-width: 900px) {
+  .card-container {
+    display: none;
+  }
+  .div-spacing {
+    display: none;
+  }
+}
