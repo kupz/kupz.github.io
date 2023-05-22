@@ -29,11 +29,7 @@
         <div class="inner-container1">
           <div class="nav-section">
             <div class="logo">
-              <img
-                src="./assets/artiflex.png"
-                style="width: 130px; margin-bottom: 30px"
-                alt="logo"
-              />
+              <img src="./assets/artiflex.png" alt="logo" class="my-logo" />
             </div>
             <div class="icon-container">
               <i class="ion-ios-home"></i>
@@ -113,7 +109,9 @@
             Jayson
           </div>
         </div>
+        <!-- content section -->
         <div class="content-section">
+          <!-- post -->
           <div class="post-container">
             <div class="user-container">
               <div class="user-section">
@@ -137,14 +135,30 @@
                 alt=""
               />
               <div class="action-container">
-                <i class="ion-happy-outline"></i>
-                <i class="ion-compose"></i>
-                <i class="ion-ios-upload-outline"></i>
+                <div style="display: flex">
+                  <i class="ion-happy-outline action-btn"></i>
+                  <div class="reactions">
+                    <i class="ion-happy"></i>
+                    <i class="ion-sad"></i>
+                    <i class="ion-heart"></i>
+                    <i class="ion-heart-broken"></i>
+                  </div>
+                </div>
+                <i class="ion-compose action-btn"></i>
+                <i class="ion-ios-upload-outline action-btn"></i>
               </div>
+              <input
+                class="textbox"
+                type="text"
+                placeholder="write a comment..."
+              />
             </div>
           </div>
+          <!-- end of post section -->
         </div>
       </div>
+      <!-- end of mid section -->
+
       <!-- right-section -->
       <div class="right-container">
         <!-- profile section -->
