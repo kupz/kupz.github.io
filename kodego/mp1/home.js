@@ -12,7 +12,74 @@ const burger = document.getElementById("burger");
 const notificationModal = document.getElementById("notificationModal");
 const closeNotif = document.getElementById("close-notif");
 const openNotif = document.getElementById("open-notif");
+const statusModal = document.getElementById("statusModal");
+const notificationContent = document.getElementById("notificationContent");
+const btnClose = document.getElementById("btnClose");
+const sideModal = document.getElementById("sideModal");
+// SIDE MODAL
+function closeSearchSide() {
+  myLogo.style.display = "flex";
+  searchContent.style.display = "none";
+  sideModal.style.display = "none";
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "flex";
+  }
+  closeNotifSide;
+}
 
+function openSearchSide() {
+  sideModal.style.display = "flex";
+  searchContent.style.display = "flex";
+  myLogo.style.display = "none";
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "none";
+  }
+  closeNotifSide;
+}
+// SMS MODAL
+function smsClose() {
+  smsModal.style.display = "none";
+}
+closeMsg.onclick = smsClose;
+
+function smsOpen() {
+  smsModal.style.display = "flex";
+}
+
+btnMessage.onclick = smsOpen;
+
+burgerClose.onclick = () => {
+  burgerModal.style.display = "none";
+};
+
+// NOTIFICATION SIDE POP UP
+function openNotifSide() {
+  notificationContent.style.display = "flex";
+  searchContent.style.display = "none";
+  sideModal.style.display = "flex";
+  myLogo.style.display = "none";
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "none";
+  }
+}
+function closeNotifSide() {
+  notificationContent.style.display = "none";
+  myLogo.style.display = "flex";
+  sideModal.style.display = "none";
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "flex";
+  }
+}
+
+// CREATE STATUS MODAL
+function openStatusModal() {
+  statusModal.style.display = "flex";
+}
+function closeStatusModal() {
+  statusModal.style.display = "none";
+}
+
+// NOTIFICATION MODAL
 function openNotificationModal() {
   notificationModal.style.display = "flex";
 }
@@ -22,42 +89,11 @@ function closeNotificationModal() {
 closeNotif.onclick = closeNotificationModal;
 openNotif.onclick = openNotificationModal;
 
+// BURGER MODAL
 burger.onclick = () => {
   burgerModal.style.display = "flex";
 };
 
 btnLogout.onclick = () => {
   window.location.href = "./index.html";
-};
-
-const btnClose = document.getElementById("btnClose");
-const sideModal = document.getElementById("sideModal");
-
-btnClose.onclick = () => {
-  myLogo.style.display = "flex";
-  sideModal.style.display = "none";
-  for (let i = 0; i < logoDescriptions.length; i++) {
-    logoDescriptions[i].style.display = "flex";
-  }
-};
-
-btnSearch.onclick = () => {
-  sideModal.style.display = "flex";
-  searchContent.style.display = "flex";
-  myLogo.style.display = "none";
-  for (let i = 0; i < logoDescriptions.length; i++) {
-    logoDescriptions[i].style.display = "none";
-  }
-};
-
-closeMsg.onclick = () => {
-  smsModal.style.display = "none";
-};
-
-btnMessage.onclick = () => {
-  smsModal.style.display = "flex";
-};
-
-burgerClose.onclick = () => {
-  burgerModal.style.display = "none";
 };

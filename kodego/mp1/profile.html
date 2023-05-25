@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <!-- meta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- end of meta -->
+
+    <title>home</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- left-section -->
+      <div class="left-container">
+        <div class="inner-container1">
+          <div class="nav-section">
+            <div class="logo">
+              <img
+                src="./assets/artiflex.png"
+                alt="logo"
+                class="my-logo"
+                id="myLogo"
+              />
+            </div>
+            <div class="icon-container" onclick="gotoHome()">
+              <i class="ion-ios-home"></i>
+              <div class="logo-description">Home</div>
+            </div>
+            <div class="icon-container" onclick="openSearchSide()">
+              <i class="ion-search"></i>
+              <div class="logo-description">Search</div>
+            </div>
+            <div
+              class="icon-container"
+              onclick="alert('this feature is not available at the moment.')"
+            >
+              <i class="ion-android-compass"></i>
+              <div class="logo-description">Reels</div>
+            </div>
+            <div
+              class="icon-container"
+              onclick="alert('this feature is not available at the moment.')"
+            >
+              <i class="ion-videocamera"></i>
+              <div class="logo-description">Explore</div>
+            </div>
+            <div class="icon-container" id="btnMessage">
+              <i class="ion-social-twitch"></i>
+              <div class="logo-description">Messages</div>
+            </div>
+            <div class="icon-container" onclick="openNotifSide()">
+              <i class="ion-android-notifications"></i>
+              <div class="logo-description">Notifications</div>
+            </div>
+            <div class="icon-container" onclick="openStatusModal()">
+              <i class="ion-plus-circled"></i>
+              <div class="logo-description">Create</div>
+            </div>
+            <div class="icon-container">
+              <img src="./assets/K.png" alt="avatar" class="small-avatar" />
+              <div class="logo-description">Profile</div>
+            </div>
+          </div>
+          <div>
+            <div class="icon-container">
+              <i class="ion-navicon-round"></i>
+              <div class="logo-description">More</div>
+            </div>
+          </div>
+        </div>
+        <div class="container2-wrapper">
+          <div class="inner-container2" id="sideModal">
+            <!-- SEARCH SECTION -->
+            <div class="search-content" id="searchContent">
+              <div class="container2-title">
+                <span style="cursor: default">Search</span>
+                <span style="cursor: pointer"
+                  ><i
+                    class="ion-close-round"
+                    onclick="closeSearchSide()"
+                    style="cursor: pointer"
+                  ></i
+                ></span>
+              </div>
+              <div style="border-bottom: 1px solid gray">
+                <input
+                  type="search"
+                  placeholder="Search..."
+                  class="input-search"
+                />
+              </div>
+              <div
+                style="
+                  margin-top: 10px;
+                  font-size: 20px;
+                  font-weight: 500;
+                  cursor: default;
+                "
+              >
+                Recent
+              </div>
+              <div
+                style="
+                  display: flex;
+                  height: 100%;
+                  width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  color: gray;
+                  cursor: default;
+                "
+              >
+                No recent searches.
+              </div>
+            </div>
+            <!-- NOTIFICATION SECTION -->
+            <div class="notificationContent" id="notificationContent">
+              <div class="container2-title">
+                <span style="cursor: default">Notifications</span>
+                <span style="cursor: pointer"
+                  ><i
+                    class="ion-close-round"
+                    onclick="closeNotifSide()"
+                    style="cursor: pointer"
+                  ></i
+                ></span>
+              </div>
+
+              <div
+                style="
+                  margin-top: 10px;
+                  font-size: 20px;
+                  font-weight: 500;
+                  cursor: default;
+                "
+              >
+                Recent
+              </div>
+              <div
+                style="
+                  display: flex;
+                  height: 100%;
+                  width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  color: gray;
+                  cursor: default;
+                "
+              >
+                No recent notification.
+              </div>
+            </div>
+            <!-- END OF NOTIFICTION -->
+          </div>
+        </div>
+      </div>
+      <!-- middle-section -->
+      <div class="mid-container">
+        <div class="profile-section">
+          <div>
+            <img class="profile-avatar" src="./assets/K.png" alt="avatar" />
+          </div>
+          <div class="info-section">
+            <div class="info-top">
+              <span>@kupzdrei24</span>
+              <span><button class="btn-editprofile">Edit profile</button></span>
+            </div>
+            <div class="info-middle">
+              <span>12 Post</span>
+              <span> 95 Followers</span>
+              <span>50 Following</span>
+            </div>
+            <div class="info-bottom">
+              <span>Ben John Villabesa</span>
+              <span>I'd rather Trust and Regret , than Doubt and Regret .</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-tab"><div"> Post</div>
+        <div class="gallery">
+          <img
+            class="gallery-image"
+            src="data:image/jpeg;base64,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"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-meI0FdRYMx0dIPf7EnU0T9I6ymXkLmf-A&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://i.pinimg.com/originals/32/f6/ba/32f6ba1cf42d8a9c87550dbc559b25c3.jpg"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwHyP2D-zqYq9JH6fjyB9aD3Wm27AFRVd8A&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1q3icaSyu3B1fX5CQjs0SdgxjvD5eAFLjQA&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyl5kl-jJ6upzNjDcstftro79JgBm8M7FbQ&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKftLwB6ujC--KseNfVcQ2bhPqGg_zfETuxw&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqiVZxkRhymqfJfi5vdfmfX2PI-wFeQ1JKw&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWv0h-L-uwKyn8hPaxVtnEqAKzzmvJ6HzEtg&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVGcXExy8xNTP2q2JaAMB7sPGD9xtToMjq3A&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YClN0B9CQt1CCy8ffpSG55jiU7UxjRuUbw&usqp=CAU"
+            alt="image"
+          />
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4p8Pouu9eTEbEa6Ukl3IrluFQpEiGATUsQ&usqp=CAU"
+            alt="image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of mid section -->
+
+    <script>
+      function gotoHome() {
+        window.location.href = "./home.html";
+      }
+    </script>
+  </body>
+</html>
